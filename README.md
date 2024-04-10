@@ -44,7 +44,7 @@ Follow these steps to use the `open.ps1` script:
 
 2. **Configuration**: Before you can use the script, you need to configure the trigger words and associated file paths. Open the `open.ps1` script in a text editor and locate the `$filePaths` dictionary. Uncomment the lines and replace `[TriggerWord1]`, `[TriggerWord2]`, etc. with your desired trigger words, and replace `[FilePath1]`, `[FilePath2]`, etc. with the full paths to the files you want to open with those trigger words.
 
-3. **Execution**: To run the script, open a PowerShell terminal and navigate to the directory containing the `open.ps1` script. Use the following command to run the script:
+3. **Execution**: To run the script, open a PowerShell terminal. Use the following command to run the script:
 
     ```
     open.ps1 YourTriggerWord
