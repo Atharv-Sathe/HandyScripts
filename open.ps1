@@ -10,10 +10,12 @@ $filePaths = @{
 if ($filePaths.ContainsKey($fileName)) {
     if ($flag -eq "vs") {
         & code $filePaths[$fileName]
+        Start-Sleep -Seconds 2
         Stop-Process -Id $pid
     }
     elseif ($null -eq $flag) {
         Invoke-Item $filePaths[$fileName]
+        Start-Sleep -Seconds 2
         Stop-Process -Id $pid
     }
     else {

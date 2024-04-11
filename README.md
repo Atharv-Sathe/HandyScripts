@@ -63,6 +63,7 @@ Follow these steps to use the `open.ps1` script:
 Please note that the script will terminate itself (`Stop-Process -Id $pid`) after opening the file. If the trigger word is not found in the `$filePaths` dictionary, or if an invalid flag is provided, the script will output an error message.
 
 ### Issues/Bugs
+**1. Script Does Not Close Automatically**: *(Status: Resolved)*
 The open.ps1 script should automatically close once the file/folder is opened. However, if the file/folder opens in full screen mode, the script may not close automatically. In such cases, you can manually close the PowerShell window. 
 If you find a fix for the above issue, please feel free to contribute, or raise an issue.
 
